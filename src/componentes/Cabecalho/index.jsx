@@ -2,11 +2,7 @@ import { styled } from "styled-components"
 import Logo from "./Logo"
 
 const HeaderEstilizado = styled.header`
-    background-color: var(--verde-escuro);
-    background-image: url('/fundo.png');
-	background-position: top center;
-	background-repeat: no-repeat;
-	background-size: 100% auto;
+
 `
 
 const HeaderContainer = styled.div`
