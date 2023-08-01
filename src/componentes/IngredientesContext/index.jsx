@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect } from 'react';
-import axios from 'axios';
+import db from './db.json';
 
 
 export const IngredientesContext = createContext({
@@ -10,18 +10,10 @@ export const IngredientesContext = createContext({
 });
 
 export const IngredientesProvider = (props) => {
-    const [categorias, setCategorias] = useState([]);
+    const categorias = db.categorias;
     const [ingredientesSelecionados, setIngredientesSelecionados] = useState([]);
 
-    useEffect(() => {
-        axios.get('http://localhost:8080/grupo-ingredientes')
-            .then(response => {
-                setCategorias(response.data);
-            })
-            .catch(error => {
-                console.error("Erro ao buscar os dados: ", error);
-            });
-    }, []);
+
 
     const alternarIngrediente = (ingrediente) => {
         // Verifica se o ingrediente já foi selecionado

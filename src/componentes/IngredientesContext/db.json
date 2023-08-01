@@ -1,8 +1,9 @@
 {
-    "grupo-ingredientes": [
+    "categorias": [
         {
             "id": 1,
             "nome": "Laticínios e Ovos",
+            "icone": "/icones/laticinios.png",
             "ingredientes": [
                 {
                     "id": 1,
@@ -37,6 +38,7 @@
         {
             "id": 2,
             "nome": "Farinhas e Fermentos",
+            "icone": "/icones/farinhas.png",
             "ingredientes": [
                 {
                     "id": 8,
@@ -71,6 +73,7 @@
         {
             "id": 3,
             "nome": "Temperos e Especiarias",
+            "icone": "/icones/temperos.png",
             "ingredientes": [
                 {
                     "id": 15,
@@ -105,6 +108,7 @@
         {
             "id": 4,
             "nome": "Óleos, Gorduras e Acetos",
+            "icone": "/icones/gorduras.png",
             "ingredientes": [
                 {
                     "id": 22,
@@ -135,6 +139,7 @@
         {
             "id": 5,
             "nome": "Hortaliças e Verduras",
+            "icone": "/icones/verduras.png",
             "ingredientes": [
                 {
                     "id": 28,
@@ -173,6 +178,7 @@
         {
             "id": 6,
             "nome": "Açúcares e Adoçantes",
+            "icone": "/icones/acucares.png",
             "ingredientes": [
                 {
                     "id": 36,
@@ -211,6 +217,7 @@
         {
             "id": 7,
             "nome": "Proteínas Animais",
+            "icone": "/icones/proteinas.png",
             "ingredientes": [
                 {
                     "id": 44,
@@ -249,6 +256,7 @@
         {
             "id": 8,
             "nome": "Grãos e Cereais",
+            "icone": "/icones/verduras.png",
             "ingredientes": [
                 {
                     "id": 52,
@@ -287,6 +295,7 @@
         {
             "id": 9,
             "nome": "Frutas Frescas",
+            "icone": "/icones/frutas-frescas.png",
             "ingredientes": [
                 {
                     "id": 60,
@@ -333,6 +342,7 @@
         {
             "id": 10,
             "nome": "Frutas Secas",
+            "icone": "/icones/frutas-secas.png",
             "ingredientes": [
                 {
                     "id": 70,
@@ -367,6 +377,7 @@
         {
             "id": 11,
             "nome": "Pães e Massas",
+            "icone": "/icones/massas.png",
             "ingredientes": [
                 {
                     "id": 77,
@@ -405,6 +416,7 @@
         {
             "id": 12,
             "nome": "Doces e Guloseimas",
+            "icone": "/icones/doces.png",
             "ingredientes": [
                 {
                     "id": 85,

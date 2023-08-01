@@ -58,7 +58,7 @@ const IngredientesSelecionados = () => {
         { ingredientesSelecionados.map(ingrediente => 
             <TagContainer key={ingrediente.id} onClick={() => alternarIngrediente(ingrediente)}>
                 <TagIngrediente ingrediente={ingrediente} ativo={true} />
-                <Legenda><img src="/public/icones/close.png" alt="" /> Remover</Legenda>
+                <Legenda><img src="/icones/close.png" alt="" /> Remover</Legenda>
             </TagContainer>
         )}
         </IngredientesSelecionadosContainer>

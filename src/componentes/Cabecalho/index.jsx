@@ -56,7 +56,7 @@ const Cabecalho = () => {
                 </Heading>
                 <SubHeading>Explore novas receitas todos os dias com os ingredientes que estão ao seu alcance!</SubHeading>
             </HeadinfContainer>
-            <BannerImg src="/public/banner.png" alt="" />
+            <BannerImg src="/banner.png" alt="" />
         </HeaderContainer>
     </HeaderEstilizado>)
 }
