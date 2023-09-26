@@ -37,7 +37,7 @@ test('alternarIngrediente adiciona e remove ingredientes corretamente', () => {
     expect(ingredientesSelecionados.textContent).toBe('0');
 });
 
-test('ingredienteEstaSelecionado retorna true se o ingrediente está selecionado', () => {
+test('ingredienteEstaSelecionado retorna false se o ingrediente não está selecionado', () => {
     const TestComponent = () => {
         const { ingredienteEstaSelecionado } = useContext(IngredientesContext);
 
@@ -59,3 +59,37 @@ test('ingredienteEstaSelecionado retorna true se o ingrediente está selecionado
 
     expect(estaSelecionado.textContent).toBe('false');
 });
+
+test('ingredienteEstaSelecionado retorna true se um ingrediente específico está selecionado', () => {
+    const TestComponent = () => {
+        const { alternarIngrediente, ingredienteEstaSelecionado } = useContext(IngredientesContext);
+
+        const ingrediente = { id: 1, nome: 'Tomate' };
+        const handleClick = () => {
+            alternarIngrediente(ingrediente);
+        };
+
+        const estaSelecionado = ingredienteEstaSelecionado(ingrediente);
+
+        return (
+            <>
+                <button onClick={handleClick}>Adicionar/Remover Ingrediente</button>
+                <div data-testid="estaSelecionado">{estaSelecionado.toString()}</div>
+            </>
+        );        
+    };
+
+    const { getByTestId, getByText } = render(
+        <IngredientesProvider>
+            <TestComponent />
+        </IngredientesProvider>
+    );
+
+    const estaSelecionado = getByTestId('estaSelecionado');
+    expect(estaSelecionado.textContent).toBe('false');
+
+    const button = getByText('Adicionar/Remover Ingrediente');
+    fireEvent.click(button);
+    expect(estaSelecionado.textContent).toBe('true');
+
+})
